@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<h1>TASK MASTER</h1>
+    <div class="login">
+    
+    <form method="POST">
+        <input name="co" type="hidden" value="lighton">
+        <button class="btn btn-primary">Light On</button>
+        </form>
+    
+    <form method="POST">
+        <input name="co" type="hidden" value="lightoff">
+        <button  class="btn btn-primary">Light Off</button>
+        </form>
+
+    <form method="POST">
+        <input name="co" type="hidden" value="dooron">
+        <button  class="btn btn-primary">Door Open</button>
+        </form>
+
+    <form method="POST">
+        <input name="co" type="hidden" value="doorclose">
+        <button class="btn btn-primary">Door Close</button>            
+        </form>  
+        
+    <form method="POST">
+        <input name="co" type="hidden" value="fanon">
+        <button class="btn btn-primary">Fan On</button>            
+        </form>
+
+        <form method="POST">
+            <input name="co" type="hidden" value="fanoff">
+            <button class="btn btn-primary">Fan off</button>            
+            </form>      
+
+</div>
+{% endblock %}
